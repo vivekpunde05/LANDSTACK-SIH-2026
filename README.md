@@ -2,12 +2,18 @@
 
 **Integrated GIS Digital Public Infrastructure for Land Governance**
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![SQL](https://img.shields.io/badge/SQL-MySQL%20%7C%20PostgreSQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![Power BI](https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-F2C811?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-Fast%20Build%20Tool-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-UI%20Styling-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![OpenLayers](https://img.shields.io/badge/OpenLayers-GIS%20Mapping-1F6B75?logo=openlayers&logoColor=white)](https://openlayers.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![PostGIS](https://img.shields.io/badge/PostGIS-3.4-4A90E2?logo=postgresql&logoColor=white)](https://postgis.net/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv&logoColor=white)](https://opencv.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?logo=numpy&logoColor=white)](https://numpy.org/)
+[![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 Smart India Hackathon 2026 · Problem statement **SIH26014**
 
 LANDSTACK is a free/open-source SIH prototype that connects parcel intelligence, visual change analysis, explainable inspection priority, field verification, citizen grievances, administrative review, and governance analytics in one GIS workspace. It remains demonstrable in an explicit local fallback mode when PostgreSQL/PostGIS is unavailable.
