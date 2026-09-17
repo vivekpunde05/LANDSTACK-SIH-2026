@@ -675,7 +675,7 @@ Future work may add official cadastral validation, free public Sentinel/Landsat 
 The included geometry, metadata, and before/after imagery are synthetic demonstration assets; they are not Sentinel, Landsat, official cadastral, ownership, or legal evidence. Public OpenStreetMap tiles are appropriate only for light development use; production use must follow the tile usage policy or use a self-hosted open stack. Source code is released under the MIT License. LANDSTACK uses only free/open-source/local/browser-native resources in the implemented prototype and requires no payment or credit card.
 #
 
-## Team Members
+## 👥Team Members
 
 | Name | LinkedIn |
 |---|---|
