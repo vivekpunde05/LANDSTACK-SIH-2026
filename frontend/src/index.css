@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #18332d;
+  background: #f3f0e8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button { font: inherit; }
+.font-display { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+button, input, select, textarea, [tabindex] { outline-offset: 3px; }
+:focus-visible { outline: 3px solid #78a64b; }
+
+.ol-viewport { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.ol-control { background: transparent; }
+.ol-control button {
+  width: 34px !important; height: 34px !important; margin: 0 !important;
+  background: rgba(255,255,255,.96) !important; color: #18332d !important;
+  border-bottom: 1px solid rgba(24,51,45,.1) !important;
+}
+.ol-zoom { left: 1rem !important; top: auto !important; bottom: 1rem !important; overflow: hidden; border-radius: 12px; box-shadow: 0 8px 24px rgba(24,51,45,.14); }
+.ol-attribution { font-size: 9px; background: rgba(255,255,255,.82) !important; }
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(200, 241, 105, .6); }
+  50% { box-shadow: 0 0 0 5px rgba(200, 241, 105, 0); }
+}
+.status-dot { animation: pulse-dot 2s infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}

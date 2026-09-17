@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-landstack}
+      POSTGRES_USER: ${POSTGRES_USER:-landstack}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    ports:
+      - "5432:5432"
+    volumes:
+      - landstack_postgres:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+      - ./database/migrations/002_phase2.sql:/docker-entrypoint-initdb.d/002-phase2.sql:ro
+      - ./database/migrations/003_phase3.sql:/docker-entrypoint-initdb.d/003-phase3.sql:ro
+      - ./database/migrations/004_phase4.sql:/docker-entrypoint-initdb.d/004-phase4.sql:ro
+      - ./database/migrations/005_phase5.sql:/docker-entrypoint-initdb.d/005-phase5.sql:ro
+      - ./database/migrations/006_phase6.sql:/docker-entrypoint-initdb.d/006-phase6.sql:ro
+      - ./database/migrations/007_phase7.sql:/docker-entrypoint-initdb.d/007-phase7.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  landstack_postgres:
