@@ -2,6 +2,12 @@
 
 **Integrated GIS Digital Public Infrastructure for Land Governance**
 
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![SQL](https://img.shields.io/badge/SQL-MySQL%20%7C%20PostgreSQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-F2C811?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 Smart India Hackathon 2026 · Problem statement **SIH26014**
 
 LANDSTACK is a free/open-source SIH prototype that connects parcel intelligence, visual change analysis, explainable inspection priority, field verification, citizen grievances, administrative review, and governance analytics in one GIS workspace. It remains demonstrable in an explicit local fallback mode when PostgreSQL/PostGIS is unavailable.
