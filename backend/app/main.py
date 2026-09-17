@@ -59,3 +59,25 @@ def health(db: Session = Depends(get_db)) -> dict[str, str]:
     except SQLAlchemyError:
         response.update({"status": "degraded", "database": "unavailable"})
     return response
+
+
+
+
+
+@app.get("/", tags=["system"])
+def root() -> dict[str, str]:
+    return {
+        "message": "LANDSTACK API is running",
+        "docs": "/docs",
+        "health": "/api/health",
+    }
+
+
+@app.get("/api/health", tags=["system"])
+def health(db: Session = Depends(get_db)) -> dict[str, str]:
+    response = {"status": "ok", "project": settings.project_name, "phase": "9"}
+    try:
+        response.update(database_status(db))
+    except SQLAlchemyError:
+        response.update({"status": "degraded", "database": "unavailable"})
+    return response
